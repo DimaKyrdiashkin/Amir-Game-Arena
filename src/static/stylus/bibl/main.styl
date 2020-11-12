@@ -1,5 +1,5 @@
 body::-webkit-scrollbar
-    width 12px
+    width 6px
 body::-webkit-scrollbar-track
     background transparent
     padding 0 6px
@@ -11,7 +11,8 @@ body::-webkit-scrollbar-thumb
     padding 0
     scroll-behavior smooth
     box-sizing border-box
-    font-family Roboto
+    font-family 'Russo One', sans-serif
+    letter-spacing .5px
 }
 h1{
     font-size 5.333333em
@@ -40,7 +41,7 @@ p{
     line-height 140%
 }
 .subP{
-    font-size 0.777777em
+    font-size 0.888888em
     line-height 140%
 }
 .smalP{
@@ -63,7 +64,7 @@ ul, li{
 a{
     outline none
     text-decoration none
-    color #5C5C5C
+    color #d6d6d6
 }
 .hidden{
     // display none
@@ -73,10 +74,19 @@ a{
 }
 body{
     font-size 18px
-    color #5C5C5C
+    color #d6d6d6
     user-select none
     overflow-x hidden
 }
+body::before
+  content ''
+  width 100%
+  height 100%
+  display block
+  background url('../img/wallpaper/pubg1.jpg') center no-repeat
+  background-size cover
+  z-index: -1
+  position fixed
 section{
     display flex
     justify-content center
@@ -87,9 +97,8 @@ section{
     display flex
     flex-direction column
     align-items center
-    overflow hidden
 }
-.conteiner{
+.container{
     max-width 1200px
     width 100vw
     position relative

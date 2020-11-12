@@ -1,0 +1,111 @@
+.tourList_head
+  background #17161ae6
+  width 100%
+  padding 16px
+  clip-path polygon(5% 0, 95% 0%, 100% 100%, 0 100%)
+.tourList_title
+  text-align center
+.tourList_table__head
+  background #17161ae6
+  margin-top 4px
+  margin-bottom 16px
+  display flex
+  align-items center
+  overflow hidden
+.tourList_table__head__item
+  height 75px
+  transform skew(20deg) translateX(-15px)
+  transition .4s
+.tourList_table__head__item>a
+  width 100%
+  height 100%
+  padding 0 40px
+  display flex
+  align-items center
+.tourList_table__head__item:first-child>a
+  padding 0 60px
+.tourList_table__head__item>a>span
+  transform skew(-20deg)
+  transition .4s
+.tourList_table__head__item:hover
+  background #d8a400
+  transition .4s
+.tourList_table__head__item:hover a>span
+  color #000
+  transition .4s
+.tourList_table__head__item.active
+  background #d8a400
+.tourList_table__head__item.active a>span
+  color #000
+.tourList_table__items
+  position relative
+  overflow hidden
+  background #17161ae6
+  padding 16px 24px 16px 16px
+  margin-bottom 4px
+  display flex
+  transition .2s
+.tourList_table__items:hover
+  transition .2s
+  transform scale(1.03)
+.tourList_table__items-info
+  display flex
+  flex-direction column
+  justify-content space-between
+  width 50%
+  padding 10px 0
+.tourList_table__items-img
+  width 20%
+  max-width 150px
+  margin-right 2%
+.tourList_table__items-price
+.tourList_table__items-mode
+  display flex
+  justify-content center
+  padding 10px 0
+  width 15%
+.tourList_table__items-button-wrapper
+  overflow hidden
+.tourList_table__items-button
+  background #d6d6d6
+  color #000
+  width 30%
+  padding 16px
+  font-size 1em
+  cursor pointer
+  transform skew(20deg) translateX(-10px)
+  transition .4s
+  border-radius 0
+  border 0
+  display flex
+  justify-content center
+.tourList_table__items-button>span
+  transform skew(-20deg)
+.tourList_table__items-button:hover
+  background #d8a400
+  transition .4s
+.tourList_table__items-info
+.tourList_table__items-price
+  margin-right 2%
+.tourList_bottom
+  width 100%
+  height 50px
+  margin-top 4px
+.tourList_bottom-more
+  width 100%
+  height 100%
+  font-size 1em
+  border-radius 0
+  background #17161ae6
+  color #d6d6d6
+  cursor pointer
+  border 0
+  transition .4s
+  clip-path polygon(0 0, 100% 0%, 95% 100%, 5% 100%)
+.tourList_bottom-more:active
+.tourList_bottom-more:focus
+  border-style none
+  outline none
+.tourList_bottom-more:hover
+  transition .4s
+  color #d8a400

@@ -1,69 +1,58 @@
-footer{
-    z-index 1
-    display flex
-    justify-content center
-    background #645E9D
-    padding 50px 0
-    width 100vw
-    color #fff
-}
-footer > .conteiner{
-    display flex
-    align-items center
-    justify-content space-between
-}
-.foot-menu{
-    display flex
-}
-.foot-menu>li{
-    margin-right 60px
-}
-.foot-menu>li:last-child{
-    margin-right 0
-}
-.foot-menu a{
-    color #fff
-    z-index 2
-    position relative
-    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-.foot-menu a::before{
-    content ''
-    display block
-    position absolute
-    width calc(100% + 24px)
-    height 0
-    background #fff
-    top 50%
-    left 50%
-    border-radius 4px
-    transform translate(-50%, -50%)
-    z-index -1
-    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-.foot-menu a:hover{
-    color #645E9D
-    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-.foot-menu a:hover::before{
-    height calc(100% + 12px)
-    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-@media all and (max-width 1280px) {
-    footer{
-        padding 35px 0
-    }
-    .foot-menu>li{
-        margin-right 40px
-    }
-}
-@media all and (max-width 920px) {
-    .foot-menu>li{
-        margin-right 20px
-    }
-}
-@media all and (max-width 768px) {
-    .foot-menu{
-        display none
-    }
-}
+footer
+  background #17161a
+  margin-top 120px
+  width 100%
+  height 100px
+  display flex
+  justify-content center
+footer .logo_wrapp 
+  position absolute
+  left 50%
+  bottom 0
+  transform translateX(-50%)
+  display flex
+  justify-content center
+  align-items center
+  width 250px
+  height 150px
+  clip-path polygon(20% 0, 80% 0, 100% 100%, 0 100%)
+  background url('../img/texture/black.webp') center no-repeat
+  background-size cover
+  z-index 2
+.footer_menu
+  display flex
+.footer_menu__item
+  width 250px
+  border-left 1px solid #484848
+  border-right 1px solid #484848
+  transition .4s
+.footer_menu__item>a
+  width 100%
+  height 100%
+  display flex
+  justify-content center
+  align-items center
+.footer_menu__item>a>span
+  font-size 1.5em
+  transition .4s
+.footer_menu__item:nth-child(1)
+.footer_menu__item:nth-child(2)
+  transform skew(-20deg)
+.footer_menu__item:nth-child(4)
+.footer_menu__item:nth-child(5)
+  transform skew(20deg)
+.footer_menu__item:nth-child(1) a>span
+.footer_menu__item:nth-child(2) a>span
+  transform skew(20deg)
+.footer_menu__item:nth-child(4) a>span
+.footer_menu__item:nth-child(5) a>span
+  transform skew(-20deg)
+.footer_menu__item-empty
+  width 190px
+  position relative
+.footer_menu__item:hover
+  background #d8a400
+  transition .4s
+.footer_menu__item:hover a>span
+  color #000
+  transition .4s
